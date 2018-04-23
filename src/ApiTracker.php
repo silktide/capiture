@@ -28,7 +28,7 @@ trait ApiTracker
      * @param int $usage
      * @param array $metrics
      */
-    public function trackApiUsage(string $apiName, string $endpoint, $usage = 1, $metrics = [])
+    public function trackApiUsage(string $apiName, string $endpoint, int $usage = 1, array $metrics = [])
     {
         if (!$this->apiTracker) {
             return;
