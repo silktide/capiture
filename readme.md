@@ -1,4 +1,6 @@
-#cAPIpture
+# cAPIpture
+
+[![CircleCI](https://circleci.com/gh/silktide/capiture.svg?style=svg)](https://circleci.com/gh/silktide/capiture)
 
 A very simple interface to track API calls.
 
@@ -7,7 +9,7 @@ A very simple interface to track API calls.
 There is no implementation here but this data could be used for various purposes including billing, usage reporting etc.
 
 ---
-###Getting started
+### Getting started
 
 **Install from composer**
 ```php
