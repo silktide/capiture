@@ -1,0 +1,24 @@
+{
+    "name": "silktide/capiture",
+    "description": "A very simple interface to track API calls.",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "James Banton",
+            "email": "jamesbanton@silktide.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Silktide\\Capiture\\": "src",
+            "Silktide\\Capiture\\Test\\": "test"
+        }
+    }
+}
