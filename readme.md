@@ -12,7 +12,7 @@ There is no implementation here but this data could be used for various purposes
 ### Getting started
 
 **Install from composer**
-```php
+```
 composer require silkitde/capiture
 ``` 
 
