@@ -4,18 +4,18 @@
 namespace Silktide\Capiture;
 
 
-trait ApiTracker
+trait ApiUsageTracker
 {
 
     /**
-     * @var ApiTrackerInterface
+     * @var ApiUsageTrackerInterface
      */
     protected $apiTracker;
 
     /**
-     * @param ApiTrackerInterface $apiTracker
+     * @param ApiUsageTrackerInterface $apiTracker
      */
-    public function setApiTracker(ApiTrackerInterface $apiTracker)
+    public function setApiTracker(ApiUsageTrackerInterface $apiTracker)
     {
         $this->apiTracker = $apiTracker;
     }
@@ -34,6 +34,6 @@ trait ApiTracker
             return;
         }
 
-        $this->apiTracker->log($apiName,$endpoint,$usage,$metrics);
+        $this->apiTracker->logApiUsage($apiName,$endpoint,$usage,$metrics);
     }
 }

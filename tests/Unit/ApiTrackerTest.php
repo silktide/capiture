@@ -7,20 +7,20 @@ namespace Silktide\Capiture\Tests\Unit;
 
 
 use PHPUnit\Framework\TestCase;
-use Silktide\Capiture\ApiTracker;
-use Silktide\Capiture\ApiTrackerInterface;
+use Silktide\Capiture\ApiUsageTracker;
+use Silktide\Capiture\ApiUsageTrackerInterface;
 
 class ApiTrackerTest extends TestCase
 {
 
     public function testLoggingThroughTraitWorksAsExpected()
     {
-        $apiTrackerMock = $this->createMock(ApiTrackerInterface::class);
+        $apiTrackerMock = $this->createMock(ApiUsageTrackerInterface::class);
         $apiTrackerMock->expects($this->once())
-            ->method('log')
+            ->method('logApiUsage')
             ->willThrowException(new \Exception("Logger called"));
 
-        $mock = $this->getMockForTrait(ApiTracker::class);
+        $mock = $this->getMockForTrait(ApiUsageTracker::class);
         $mock->setApiTracker($apiTrackerMock);
         $this->expectException(\Exception::class);
         $this->expectExceptionMessage('Logger called');
@@ -30,7 +30,7 @@ class ApiTrackerTest extends TestCase
 
     public function testNoErrorIsThrownWhenNoTrackerIsSet()
     {
-        $mock = $this->getMockForTrait(ApiTracker::class);
+        $mock = $this->getMockForTrait(ApiUsageTracker::class);
         $mock->trackApiUsage('api','endpoint',2,[]);
         $this->assertTrue(true);
     }
