@@ -9,6 +9,7 @@ abstract class ApiNames
     const GOOGLE_PLACES = 'google places';
     const YANDEX_MAPS = 'yandex maps';
     const BING_WEB_SEARCH = 'bing web search';
+    const FACEBOOK_GRAPH = 'facebook graph';
     const AWIS = 'awis';
     const SIMILAR_WEB = 'similar web';
     const SEMRUSH = 'semrush';
@@ -18,8 +19,8 @@ abstract class ApiNames
     const FOURSQUARE = 'foursquare';
     const YELP = 'yelp';
     const YELL = 'yell';
-    const YAHOO = 'yahoo';
-    const GO_LOCAL = 'go local';
+    const YAHOO_YQL = 'yahoo yql';
+    const GOLOCAL = 'golocal';
 
     final private function __construct()
     {
