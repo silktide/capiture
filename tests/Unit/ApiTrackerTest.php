@@ -21,7 +21,7 @@ class ApiTrackerTest extends TestCase
             ->willThrowException(new \Exception("Logger called"));
 
         $mock = $this->getMockForTrait(ApiUsageTracker::class);
-        $mock->setApiTracker($apiTrackerMock);
+        $mock->setApiUsageTracker($apiTrackerMock);
         $this->expectException(\Exception::class);
         $this->expectExceptionMessage('Logger called');
         $mock->trackApiUsage('api','endpoint',2,[]);

@@ -15,7 +15,7 @@ trait ApiUsageTracker
     /**
      * @param ApiUsageTrackerInterface $apiTracker
      */
-    public function setApiTracker(ApiUsageTrackerInterface $apiTracker)
+    public function setApiUsageTracker(ApiUsageTrackerInterface $apiTracker)
     {
         $this->apiTracker = $apiTracker;
     }
