@@ -21,6 +21,7 @@ abstract class ApiNames
     const YELL = 'yell';
     const YAHOO_YQL = 'yahoo yql';
     const GOLOCAL = 'golocal';
+    const DOMAINS_BOT = 'domains bot';
 
     final private function __construct()
     {
