@@ -17,21 +17,21 @@ class ApiTrackerTest extends TestCase
     {
         $apiTrackerMock = $this->createMock(ApiUsageTrackerInterface::class);
         $apiTrackerMock->expects($this->once())
-            ->method('logApiUsage')
+            ->method('trackApiUsage')
             ->willThrowException(new \Exception("Logger called"));
 
         $mock = $this->getMockForTrait(ApiUsageTracker::class);
         $mock->setApiUsageTracker($apiTrackerMock);
         $this->expectException(\Exception::class);
         $this->expectExceptionMessage('Logger called');
-        $mock->trackApiUsage('api','endpoint',2,[]);
+        $mock->trackApiUsage('api','endpoint',false,[]);
 
     }
 
     public function testNoErrorIsThrownWhenNoTrackerIsSet()
     {
         $mock = $this->getMockForTrait(ApiUsageTracker::class);
-        $mock->trackApiUsage('api','endpoint',2,[]);
+        $mock->trackApiUsage('api','endpoint',true,[]);
         $this->assertTrue(true);
     }
 

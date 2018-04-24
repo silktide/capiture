@@ -25,15 +25,15 @@ trait ApiUsageTracker
      *
      * @param string $apiName
      * @param string $endpoint
-     * @param int $usage
+     * @param bool $success
      * @param array $metrics
      */
-    public function trackApiUsage(string $apiName, string $endpoint, int $usage = 1, array $metrics = [])
+    public function trackApiUsage(string $apiName, string $endpoint, bool $success = true, array $metrics = [])
     {
         if (!$this->apiTracker) {
             return;
         }
 
-        $this->apiTracker->logApiUsage($apiName,$endpoint,$usage,$metrics);
+        $this->apiTracker->trackApiUsage($apiName,$endpoint,$success,$metrics);
     }
 }
