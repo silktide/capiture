@@ -20,21 +20,21 @@ composer require silkitde/capiture
 
 There is an optional trait which can make life slightly easier by setting up the scaffolding.
 
-Don't forget to set your implementation through the `setApiTracker()` method.
+Don't forget to set your implementation through the `setApiUsageTracker()` method.
 
 ```php
 <?php 
 
 
-use Silktide\Capiture\ApiTracker;
+use Silktide\Capiture\ApiUsageTracker;
 
 class ApiClient
 {
-    use ApiTracker;
+    use ApiUsageTracker;
     
     public function makeRequest()
     {
-        $this->trackApiUsage('my-api','https://my.api.com/v1/exciting', 5, ['additional' => 'optional-metrics']);
+        $this->trackApiUsage('my-api','https://my.api.com/v1/exciting', true, ['additional' => 'optional-metrics']);
     }
 }
 
