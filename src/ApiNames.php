@@ -23,6 +23,7 @@ abstract class ApiNames
     const GOLOCAL = 'golocal';
     const DOMAINS_BOT = 'domains bot';
     const LATVIJAS_TALRUNIS = 'latvijas talrunis';
+    const BOOSTABILITY = 'boostability';
 
     final private function __construct()
     {
