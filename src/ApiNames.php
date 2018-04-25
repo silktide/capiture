@@ -25,6 +25,7 @@ abstract class ApiNames
     const BOOSTABILITY = 'boostability';
     const AWS_ALEXA_WEB_INFORMATION = 'aws alexa web information';
     const UBERALL = 'uberall';
+    const YEXT = 'yext';
 
     final private function __construct()
     {
