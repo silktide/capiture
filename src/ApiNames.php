@@ -10,7 +10,6 @@ abstract class ApiNames
     const YANDEX_MAPS = 'yandex maps';
     const BING_WEB_SEARCH = 'bing web search';
     const FACEBOOK_GRAPH = 'facebook graph';
-    const AWIS = 'awis';
     const SIMILAR_WEB = 'similar web';
     const SEMRUSH = 'semrush';
     const SPYFU = 'spyfu';
@@ -24,6 +23,7 @@ abstract class ApiNames
     const DOMAINS_BOT = 'domains bot';
     const LATVIJAS_TALRUNIS = 'latvijas talrunis';
     const BOOSTABILITY = 'boostability';
+    const AWS_ALEXA_WEB_INFORMATION = 'aws alexa web information';
 
     final private function __construct()
     {
