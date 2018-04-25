@@ -24,6 +24,7 @@ abstract class ApiNames
     const LATVIJAS_TALRUNIS = 'latvijas talrunis';
     const BOOSTABILITY = 'boostability';
     const AWS_ALEXA_WEB_INFORMATION = 'aws alexa web information';
+    const UBERALL = 'uberall';
 
     final private function __construct()
     {
