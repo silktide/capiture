@@ -26,6 +26,7 @@ abstract class ApiNames
     const AWS_ALEXA_WEB_INFORMATION = 'aws alexa web information';
     const UBERALL = 'uberall';
     const YEXT = 'yext';
+    const HYDRA = 'hydra';
 
     final private function __construct()
     {
