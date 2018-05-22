@@ -27,6 +27,7 @@ abstract class ApiNames
     const UBERALL = 'uberall';
     const YEXT = 'yext';
     const HYDRA = 'hydra';
+    const HERE = 'here';
 
     final private function __construct()
     {
