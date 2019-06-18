@@ -29,7 +29,6 @@ abstract class ApiNames
     const HYDRA = 'hydra';
     const HERE = 'here';
     const SERP_API = 'serpapi';
-    const BING_SCRAPE = 'bing scrape';
     const FCR_MEDIA = 'fcr media';
 
     final private function __construct()
