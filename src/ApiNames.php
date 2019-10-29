@@ -7,6 +7,7 @@ namespace Silktide\Capiture;
 abstract class ApiNames
 {
     const GOOGLE_PLACES = 'google places';
+    const GOOGLE_PLACES_PLATFORM = 'google places platform'
     const YANDEX_MAPS = 'yandex maps';
     const BING_WEB_SEARCH = 'bing web search';
     const FACEBOOK_GRAPH = 'facebook graph';
